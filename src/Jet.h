@@ -20,12 +20,17 @@ public:
 
 	//Getters
 	float getRotation();
+	glm::vec2 getOrientation();
+	float getTurnRate();
+	float getAccelerationRate();
 
 	//Setters
 	void setDestination(glm::vec2 destination);
 	void setMaxSpeed(float speed);
 	void setOrientation(glm::vec2 orientation);
 	void setRotation(float angle);
+	void setTurnRate(float rate);
+	void setAccelerationRate(float rate);
 
 private:
 
@@ -34,6 +39,8 @@ private:
 	glm::vec2 m_orientation;
 	float m_rotationAngle;
 	float m_maxSpeed;
+	float m_turnRate;
+	float m_accelerationRate;
 
 	// private function
 	void m_Move();

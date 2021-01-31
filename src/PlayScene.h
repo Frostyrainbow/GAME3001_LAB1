@@ -7,6 +7,7 @@
 #include "Label.h"
 #include "Jet.h"
 #include "Target.h"
+#include "Obstacle.h"
 
 
 class PlayScene : public Scene
@@ -30,6 +31,7 @@ private:
 
 	Jet* m_pJet;
 	Target* m_pTarget;
+	Obstacle* m_pObstacle;
 
 	// UI Items
 	
